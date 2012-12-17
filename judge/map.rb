@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib.rb'
+require './lib.rb'
 
 syllables, rhymeparts = load_dictionary(ARGV[0])
 

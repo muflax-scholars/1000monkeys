@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib.rb'
+require './lib.rb'
 
 couplet1, couplet2 = nil, nil
 reduce do |score, couplets|

@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib.rb'
+require './lib.rb'
 
 reduce do |rhymepart, lines|
   lines.size.times do |i|

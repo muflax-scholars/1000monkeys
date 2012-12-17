@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib.rb'
+require './lib.rb'
 
 map do |line|
   words = line.split

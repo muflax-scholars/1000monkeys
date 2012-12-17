@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib.rb'
+require './lib.rb'
 
 reduce do |rhymepart, words|
   wordlist = words.collect{|w| w.split("\t", 2)[1] }.join(" ")

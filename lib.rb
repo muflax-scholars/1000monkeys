@@ -3,13 +3,6 @@
 # Useful functions for massively parallelizing poetry.
 #
 
-# give all arrays a method for picking a random element
-class Array
-  def rand
-    self[super(self.length)].dup
-  end
-end
-
 # give all strings a function to strip away non-alphanumeric characters
 class String
   def cleaned

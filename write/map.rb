@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib.rb'
+require './lib.rb'
 
 syllables, rhymeparts = load_dictionary(ARGV[0])
 words = load_distribution(ARGV[1])
@@ -9,14 +9,14 @@ map do |line|
 
   8.times do
     if word == ""
-      word = words.keys.rand
+      word = words.keys.sample
     else
-      word = words[word].rand
+      word = words[word].sample
     end
 
     unless syllables.has_key?(word.cleaned)
       word, line, meter = "", "", ""
-      retry
+      redo
     end
 
     line += word + " "
